@@ -9,7 +9,7 @@
   "scripts": {
     "build": "tsc",
     "bundle": "esbuild src/index.ts --bundle --platform=node --format=cjs --outfile=dist/bundle.cjs",
-    "build:sea": "npm run bundle && node --build-sea sea-config.json",
+    "build:sea": "npm run bundle && mkdir sea && node --build-sea sea-config.json",
     "start": "node --import=tsx src/index.ts",
     "test": "node --import=tsx --test src/**/*.test.ts",
     "lint": "eslint .",
