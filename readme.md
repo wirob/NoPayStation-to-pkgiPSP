@@ -20,9 +20,9 @@ NoPayStation-to-pkgiPSP/
 ├─ PSP_GAMES.tsv
 ├─ PSP_THEMES.tsv
 ```
-1. Install dependencies
-2. Run the command `start` specified in [package.json](./package.json)
-3. If everything went right, you should now have `pkgi_*.txt` files:
+4. Install dependencies
+5. Run the command `start` specified in [package.json](./package.json)
+6. If everything went right, you should now have `pkgi_*.txt` files and a `dbformat.txt`:
 ```
 NoPayStation-to-pkgiPSP/
 ├─ src/
@@ -36,7 +36,9 @@ NoPayStation-to-pkgiPSP/
 ├─ pkgi_dlcs.txt
 ├─ pkgi_games.txt
 ├─ pkgi_themes.txt
+├─ dbformat.txt
 ```
+7. Transfer all your new `.txt` files to `/PSP/GAME/PKGI/`
 
 ### SEA (single executable application)
 
@@ -60,7 +62,9 @@ some-dir/
 ├─ pkgi_dlcs.txt
 ├─ pkgi_games.txt
 ├─ pkgi_themes.txt
+├─ dbformat.txt
 ```
+4. Transfer all your new `.txt` files to `/PSP/GAME/PKGI/`
 
 ## Q/A
 
