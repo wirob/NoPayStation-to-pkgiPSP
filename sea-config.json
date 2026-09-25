@@ -1,0 +1,1 @@
+{ "main": "./dist/bundle.cjs", "output": "./sea/NoPayStation-to-pkgiPSP", "mainFormat": "commonjs" }

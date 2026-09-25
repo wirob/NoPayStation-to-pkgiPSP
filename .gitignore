@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+# Generated output
+dbformat.txt
+pkgi_*.txt
+
+# User-downloaded NoPayStation input data
+*.tsv
+
+# Skip SEA builds
+sea/
