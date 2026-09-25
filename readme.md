@@ -4,6 +4,40 @@ Everything about pkgiPSP specifics can be found in [pkgiPSP's repo.](https://git
 
 ## How to use
 
+### Node
+
+1. Clone or download this repo 
+2. Make sure to have the same version of Node installed that is specified in [.tool-versions](./.tool-versions)
+3. Place all the NoPayStation db files in the root of this project:
+```
+NoPayStation-to-pkgiPSP/
+├─ src/
+│  ├─ [...]
+├─ package.json
+├─ package-lock.json
+[...]
+├─ PSP_DLCS.tsv
+├─ PSP_GAMES.tsv
+├─ PSP_THEMES.tsv
+```
+1. Install dependencies
+2. Run the command `start` specified in [package.json](./package.json)
+3. If everything went right, you should now have `pkgi_*.txt` files:
+```
+NoPayStation-to-pkgiPSP/
+├─ src/
+│  ├─ [...]
+├─ package.json
+├─ package-lock.json
+[...]
+├─ PSP_DLCS.tsv
+├─ PSP_GAMES.tsv
+├─ PSP_THEMES.tsv
+├─ pkgi_dlcs.txt
+├─ pkgi_games.txt
+├─ pkgi_themes.txt
+```
+
 ### SEA (single executable application)
 
 1. Place the SEA in the same folder as your NoPayStation db files resides, like so:
@@ -32,6 +66,9 @@ some-dir/
 
 ### Why is there less items in `pkgi_*.txt` than `PSP_*.tsv`?!
 This is because some items are missing important values like `PKG direct link`. Keeping these would not make much sense since you would not be able to obtain these.
+
+### Why is the SEA so big?!
+Since Node is **not** a low-level language, it needs to be bundled with the source code. This results in a ~140MB file size.
 
 ## Content types
 
