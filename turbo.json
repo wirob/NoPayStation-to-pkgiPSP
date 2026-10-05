@@ -1,0 +1,30 @@
+{
+  "$schema": "./node_modules/turbo/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**", "tsconfig.json", "package.json"],
+      "outputs": ["dist/**"]
+    },
+    "bundle": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**", "package.json"],
+      "outputs": ["dist/**"]
+    },
+    "build:sea": {
+      "dependsOn": ["^build"],
+      "outputs": ["sea/**"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "inputs": ["src/**", "package.json"]
+    },
+    "start": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

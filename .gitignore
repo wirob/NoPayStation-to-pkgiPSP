@@ -10,3 +10,6 @@ pkgi_*.txt
 
 # Skip SEA builds
 sea/
+
+# Turborepo
+.turbo/

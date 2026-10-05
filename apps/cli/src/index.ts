@@ -6,10 +6,17 @@ import { Command } from '@commander-js/extra-typings'
 import packageJson from '../package.json'
 import { DB_TYPES } from './types'
 
+/*
+[ ] Add offline mode
+    [ ] Offline CLI option
+[ ] Add default "online" mode
+    [ ] Download the latest TSV from NoPayStation
+*/
+
 const program = new Command()
 
 program
-  .name(packageJson.name)
+  .name('NoPayStation-to-pkgiPSP')
   .description(packageJson.description)
   .version(packageJson.version)
 
