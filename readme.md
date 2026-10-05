@@ -8,35 +8,37 @@ Everything about pkgiPSP specifics can be found in [pkgiPSP's repo.](https://git
 
 1. Clone or download this repo 
 2. Make sure to have the same version of Node installed that is specified in [.tool-versions](./.tool-versions)
-3. Place all the NoPayStation db files in the root of this project:
+3. Place all the NoPayStation db files in `apps/cli/`:
 ```
 NoPayStation-to-pkgiPSP/
-├─ src/
-│  ├─ [...]
-├─ package.json
-├─ package-lock.json
-[...]
-├─ PSP_DLCS.tsv
-├─ PSP_GAMES.tsv
-├─ PSP_THEMES.tsv
+├─ apps/
+│  ├─ cli/
+│  │  ├─ src/
+│  │  │  ├─ [...]
+│  │  ├─ package.json
+│  │  [...]
+│  │  ├─ PSP_DLCS.tsv
+│  │  ├─ PSP_GAMES.tsv
+│  │  ├─ PSP_THEMES.tsv
 ```
 4. Install dependencies
-5. Run the command `start` specified in [package.json](./package.json)
+5. Run the command `start` specified in [apps/cli/package.json](./apps/cli/package.json) (e.g. `npm run start --workspace cli`)
 6. If everything went right, you should now have `pkgi_*.txt` files and a `dbformat.txt`:
 ```
 NoPayStation-to-pkgiPSP/
-├─ src/
-│  ├─ [...]
-├─ package.json
-├─ package-lock.json
-[...]
-├─ PSP_DLCS.tsv
-├─ PSP_GAMES.tsv
-├─ PSP_THEMES.tsv
-├─ pkgi_dlcs.txt
-├─ pkgi_games.txt
-├─ pkgi_themes.txt
-├─ dbformat.txt
+├─ apps/
+│  ├─ cli/
+│  │  ├─ src/
+│  │  │  ├─ [...]
+│  │  ├─ package.json
+│  │  [...]
+│  │  ├─ PSP_DLCS.tsv
+│  │  ├─ PSP_GAMES.tsv
+│  │  ├─ PSP_THEMES.tsv
+│  │  ├─ pkgi_dlcs.txt
+│  │  ├─ pkgi_games.txt
+│  │  ├─ pkgi_themes.txt
+│  │  ├─ dbformat.txt
 ```
 7. Transfer all your new `.txt` files to `/PSP/GAME/PKGI/`
 
